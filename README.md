@@ -15,3 +15,10 @@
 ## Быстрый старт (локально с Docker)
 1. Скопируйте репозиторий или распакуйте архив.
 2. Соберите и поднимите сервис:
+3. Откройте Swagger UI: `http://localhost:8000/docs`
+4. Мини-фронтенд: `http://localhost:8000/static/index.html`
+
+## Замечания
+- Подробные настройки и интеграции (реальные endpoins CBU, lex.uz) нужно заполнить в `app/config.py`.
+- Alembic содержит шаблон — выполните миграции при необходимости.
+- Чтобы загрузить TN VED из `.docx`, используйте `python -m app.workers.parse_tnved_docx path/to/file.docx`.
